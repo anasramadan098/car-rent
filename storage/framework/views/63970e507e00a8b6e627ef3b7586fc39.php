@@ -1,5 +1,5 @@
-@extends('components.layout')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
     <section class="welcome about"></section>
     <div class="page">
         <div class="container about">
@@ -18,4 +18,5 @@
             <img src="https://www.key.sa/public/uploads/ks-aboutImg1490007750.png" alt="">
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('components.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\car-rent\resources\views/about-us.blade.php ENDPATH**/ ?>

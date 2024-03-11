@@ -10,6 +10,10 @@
     box-sizing: border-box;
     font-family: 'Droid-Arabic';
 }
+:root {
+    --main-color:#0cbff5;
+    --sectond-color:#001c6e;
+}
 ul {
     list-style: none;
 }
@@ -46,7 +50,7 @@ header {
                 display: block;
             }
             .fa-x {
-                color: #fe8300;
+                color: var(--main-color);
                 font-size: 1.5em;
                 cursor: pointer;
                 margin-bottom: 20px;
@@ -67,10 +71,10 @@ header {
                     }
                     &.active,
                     &:hover {
-                        color: #FE7E00 !important;
+                        color: var(--main-color) !important;
                     }
                     i {
-                        color: #fe8300;
+                        color: var(--main-color);
                         margin-left: 10px;
                     }
                 }
@@ -78,7 +82,7 @@ header {
         }
     }
     .logo {
-        max-width: 40%;
+        max-width: 10%;
     }
     .btns {
         display: flex;
@@ -95,7 +99,7 @@ header {
                 margin-left: 10px;
             }   
             &:hover {
-                background-color: #FE7E00 !important;
+                background-color: var(--main-color) !important;
             }
         }
         a.lang {
@@ -150,7 +154,7 @@ header {
         justify-content: space-between;
         .head {
             line-height: 1.1;
-            color: #ff7f39;
+            color: var(--main-color);
             font-weight: bold;
             font-size: 1.1em;
             h2 {
@@ -194,7 +198,7 @@ header {
                     top: 0;
                     border: none;
                     outline: none;
-                    background: #ff7f39;
+                    background: var(--main-color);
                     width: 35%;
                     color: #fff;
                     font-size: 19px;
@@ -229,13 +233,13 @@ header {
             color: #878787;
             span {
                 display: block;
-                color: #FE7E00;
+                color: var(--main-color);
             }
         }
         a.num {
             font-size: 2.3em;
             letter-spacing: -3px;
-            color: #FE7E00;
+            color: var(--main-color);
         }
         .icons {
             margin-top: 10px;
@@ -243,7 +247,7 @@ header {
             gap: 10px;
             .icon {
                 font-size: 1.7em !important;
-                color: #fe8300;
+                color: var(--main-color);
             }
         }
         .imgs {
@@ -263,7 +267,7 @@ header {
     align-items: center;
     h3 {
         font-size: 2.3em;
-        color: #FE7E00;
+        color: var(--main-color);
     }
     .col {
         display: flex;
@@ -276,7 +280,7 @@ header {
             font-weight: bold;
             transition: .3s;
             &:hover {
-                color: #ff7f39;
+                color: var(--main-color);
             }
         }
     }
@@ -368,7 +372,7 @@ footer {
             transition: .3s;
             
             &:hover {
-                color: #FE7E00;
+                color: var(--main-color);
             }
         }
     }
@@ -395,7 +399,7 @@ footer {
                 transition: .3s;
                 &.active {
                     border-radius: 7px;
-                    border: 2px solid #FE7E00;
+                    border: 2px solid var(--main-color);
                 }
               }
             }
@@ -415,7 +419,7 @@ footer {
             cursor: pointer;
             transition: .3s;
             &.active {
-                border-color: #FE7E00;
+                border-color: var(--main-color);
             }
         }
       }
@@ -442,7 +446,7 @@ footer {
                 }
             }
             .name {
-                color: #fe8300;
+                color: var(--main-color);
             }
             p {
                 color: #333;
@@ -451,7 +455,7 @@ footer {
                 display: block;
                 width: 100%;
                 padding: 10px;
-                background-color: #fe8300;
+                background-color: var(--main-color);
                 color: #fff;
                 margin-top: 20px;
                 border-radius: 4px;
@@ -462,11 +466,11 @@ footer {
       }
       .load {
         display: block;
-        border: 1px solid #fe8300;
+        border: 1px solid var(--main-color);
         background-color: #fff;
         padding: 5px 15px;
         border-radius: 4px;
-        color: #fe8300;
+        color: var(--main-color);
         font-size: 18px;
         font-weight: bold;
         margin: 40px auto 0;
@@ -474,7 +478,7 @@ footer {
         transition: .3s;
         &:hover {
             color: #fff;
-            background-color: #fe8300;
+            background-color: var(--main-color);
         }
       }
 }
@@ -519,7 +523,7 @@ h1.offers {
         margin: 40px 50px 40px 0 ;
         &.orange li {
             font-weight: bold;
-            color: #fe8300;
+            color: var(--main-color);
         }
         &.grey li {
             font-weight: bold;
@@ -528,7 +532,7 @@ h1.offers {
     }
     h2 {
         font-size: 2em;
-        color: #fe8300;
+        color: var(--main-color);
     }
     .container:not(:first-child) {
         padding-left: 300px;
@@ -537,7 +541,7 @@ h1.offers {
         margin-bottom: 20px;
     }
     span {
-        color: #fe8300;
+        color: var(--main-color);
     }
 }
 
@@ -593,7 +597,7 @@ form.main {
         }
     }
     button {
-        background-color: #FE7E00;
+        background-color: var(--main-color);
         border-radius: 20px;
         color: #ffffff;
         font-size: 10px;
@@ -604,7 +608,7 @@ form.main {
         transition: .5s;
         &:hover {
             background-color:transparent ;
-            color: #fe8300;
+            color: var(--main-color);
         }
     }
 }
@@ -653,7 +657,7 @@ form.main {
             }
         }
         label {
-            color: #fe8300 !important;
+            color: var(--main-color) !important;
         }
 }
 
@@ -746,4 +750,11 @@ form.main {
             width: 100% !important;
         }
     }
+}
+
+.handeler {
+    z-index: 100;
+    position: absolute;
+    bottom: -50%;
+    background: #eee;
 }

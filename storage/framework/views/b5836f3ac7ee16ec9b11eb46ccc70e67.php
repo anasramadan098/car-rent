@@ -1,6 +1,6 @@
-@extends('components.layout')
-@section('title',"Home")
-@section('content')
+
+<?php $__env->startSection('title',"Home"); ?>
+<?php $__env->startSection('content'); ?>
     <section class="welocme">
      <style>
         swiper-container {
@@ -227,4 +227,5 @@
     </section>
 <!-- End Quick Links -->
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('components.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\car-rent\resources\views/index.blade.php ENDPATH**/ ?>

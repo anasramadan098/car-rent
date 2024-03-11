@@ -1,5 +1,5 @@
-@extends('components.layout')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
     <div class="text carrers">
         <h2>
             الوظائف
@@ -76,5 +76,6 @@
             </form>
         </div>
     </div>
-    <script src="{{asset('js/form.js')}}"></script>
-@endsection
+    <script src="<?php echo e(asset('js/form.js')); ?>"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('components.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\car-rent\resources\views/careers.blade.php ENDPATH**/ ?>

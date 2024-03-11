@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rent Car | @yield('title') </title>
+    <title>Rent Car | <?php echo $__env->yieldContent('title'); ?> </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset('style.css')); ?>">
 </head>
 <body dir="rtl">
     <header>
@@ -89,7 +89,7 @@
                 </ul>
             </div>
         </div>
-        <img src="{{asset('imgs/logo.png')}}" alt="Logo" class="logo">
+        <img src="<?php echo e(asset('imgs/logo.png')); ?>" alt="Logo" class="logo">
         <div class="btns">
             <a href="#"  style="background: #6F6F6E;">
                 <i class="fa-solid fa-gear"></i>
@@ -111,7 +111,7 @@
             </a>
         </div>
     </header>
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
     <footer>
         <p>
             حقوق الملكية 2024. جميع الحقوق محفوظة.
@@ -131,4 +131,4 @@
         });
     </script>
 </body>
-</html>
+</html><?php /**PATH C:\xampp\htdocs\car-rent\resources\views/components/layout.blade.php ENDPATH**/ ?>

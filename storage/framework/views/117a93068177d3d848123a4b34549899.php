@@ -1,6 +1,6 @@
-@extends('components.layout')
-@section('title',"مبيعات السيارة")
-@section('content')
+
+<?php $__env->startSection('title',"مبيعات السيارة"); ?>
+<?php $__env->startSection('content'); ?>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <div class="welcome">
         <h1>مبيعات السيارات</h1>
@@ -67,7 +67,7 @@
             </p>
         </div>
         <div class="container">
-            {{-- Start Swiper --}}
+            
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -225,7 +225,7 @@
                 </a>
               </div>
          
-              <script src="{{asset('js/filter.js')}}"></script>
+              <script src="<?php echo e(asset('js/filter.js')); ?>"></script>
               <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
                <script>
                     var swiper = new Swiper(".mySwiper", {
@@ -237,7 +237,9 @@
                     }
                     });
                </script>
-            {{-- End Swiper --}}
+            
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('components.layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\car-rent\resources\views/car-selling.blade.php ENDPATH**/ ?>
